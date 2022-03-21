@@ -34,7 +34,7 @@ caps=[{
 #run_session function searches for 'BrowserStack' on google.com
 def run_session(desired_cap):
   driver = webdriver.Remote(
-      command_executor='https://iliafedorov_FuMbXo:QuuX41dXqi3GTzKgs8qL@hub-cloud.browserstack.com/wd/hub',
+      command_executor='',
       desired_capabilities=desired_cap)
   driver.get("https://www.google.com")
   if not "Google" in driver.title:
